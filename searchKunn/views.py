@@ -44,9 +44,9 @@ class IndexView(generic.ListView):
         return context
 
 
-def zenbu(request):
+def kensaku_kunn(request):
     book = Book.objects.order_by('-id')
-    return render(request, 'searchKunn/zenbu.html', {
+    return render(request, 'searchKunn/KensakuKunn.html', {
         'book_list': book,
     })
 
